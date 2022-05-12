@@ -1,19 +1,20 @@
-import { useState } from 'react'
-import logo from './logo.svg'
-import './App.css'
-import Header from './components/Header'
+import {useState} from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import {Route, Router} from "react-router-dom";
+import Header from "./components/Header";
+import Home from "./components/Home";
 
 function App() {
-  
-
   return (
-    <div className="App">
-      
-      {/* Header */}
+    
+      <div className="App">
       <Header></Header>
-      {/* Home */}
-    </div>
-  )
+      <Home></Home>
+        
+      </div>
+    
+  );
 }
 
-export default App
+export default App;
