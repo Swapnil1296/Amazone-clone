@@ -4,6 +4,7 @@ import "../CSSfiles/Product.css";
 const Product = ({id,title, image, price, rating}) => {
   return (
     <div className="product">
+      <h1>Product page</h1>
       <div className="product_info">
         <p>{title}</p>
         <p className="product__price">
