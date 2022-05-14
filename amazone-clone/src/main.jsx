@@ -3,8 +3,13 @@ import ReactDOM from 'react-dom/client'
 import App from './App'
 import './index.css'
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+import reducer, { initialState } from './reducer/reducer';
+import { StateProvider } from './state.provider/stateProvider';
+
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <App />
+    <StateProvider initialState={initialState} reducer={reducer}>
+      <App />
+    </StateProvider>
   </React.StrictMode>
-)
+);

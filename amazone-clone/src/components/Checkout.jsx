@@ -1,24 +1,28 @@
-import React from 'react'
-import '../CSSfiles/Checkout.css'
+import React from "react";
+import "../CSSfiles/Checkout.css";
 
-import Subtotal from './Subtotal'
+import Subtotal from "./Subtotal";
 
 const Checkout = () => {
-    return (
-      <div className="checkout">
-        <div className="checkout__left">
-          {/* banner image */}
-          <img className="checkout__ad" src="" alt="" />
-          <div>
-            <h2 className="checkout__title">Your Shopping Basket</h2>
-          </div>
-        </div>
-        {/* for total amout and other stuff */}
-        <div className="checkout__right">
-          <Subtotal></Subtotal>
+  return (
+    <div className="checkout">
+      <div className="checkout__left">
+        {/* banner image */}
+        <img
+          className="checkout__ad"
+          src="https://images-na.ssl-images-amazon.com/images/G/02/UK_CCMP/TM/OCC_Amazon1._CB423492668_.jpg"
+          alt=""
+        />
+        <div>
+          <h2 className="checkout__title">Your Shopping Basket</h2>
         </div>
       </div>
-    );
-}
+      {/* for total amout and other stuff */}
+      <div className="checkout__right">
+        <Subtotal></Subtotal>
+      </div>
+    </div>
+  );
+};
 
-export default Checkout
+export default Checkout;
