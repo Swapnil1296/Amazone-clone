@@ -1,30 +1,16 @@
-import {useState} from "react";
-import logo from "./logo.svg";
-import "./App.css";
+import React from 'react'
+import Header from './componentes/Header'
+import Home from './componentes/Home'
 
-import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
-import Header from "./components/Header";
-import Home from "./components/Home";
 
-import Checkout from "./components/Checkout";
 
-function App() {
+const App = () => {
   return (
-    <Router>
-      <div className="app">
-        <Header />
-        <Switch>
-          <Route path="/checkout">
-            <Checkout />
-          </Route>
-          {/*default route always shoulbe at bottom  */}
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
-      </div>
-    </Router>
-  );
+    <div>
+      <Header></Header>
+     <Home></Home>
+    </div>
+  )
 }
 
-export default App;
+export default App
