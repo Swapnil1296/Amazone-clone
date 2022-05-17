@@ -2,16 +2,20 @@ import React from "react";
 import "./Home.css";
 import Product from "../HomeProducts/HomePoducts";
 import SingleImage from "../singleCardonHome/SingleImage";
+import HeadSlider from "../Sliders/HeadSlider/HeadSlider";
 
 const Home = () => {
   return (
     <div className="home">
       <div className="home_container">
-        <img
+        {/* <img
           className="home__image"
           src="https://m.media-amazon.com/images/I/51x7nrGlOrL._SX1500_.jpg"
           alt=""
-        />
+        /> */}
+        <div className="home__image">
+          <HeadSlider />
+        </div>
         <div className="home__row">
           <Product
             header="Upgrade your home | Amazon Brands & more"
@@ -104,8 +108,6 @@ const Home = () => {
             tolink=" See more"
           />
         </div>
-
-        <div className="home__row">{/* <Product></Product> */}</div>
       </div>
     </div>
   );
