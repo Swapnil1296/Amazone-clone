@@ -15,7 +15,9 @@
     "@mui/styles": "^5.8.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "react-material-ui-carousel": "^3.3.3"
+    "react-material-ui-carousel": "^3.3.3",
+    "react-multi-carousel": "^2.8.0",
+    "unop-react-dropdown": "^0.2.3"
   },
   "devDependencies": {
     "@types/react": "^18.0.0",

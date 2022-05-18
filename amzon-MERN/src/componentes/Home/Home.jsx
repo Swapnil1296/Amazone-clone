@@ -3,16 +3,89 @@ import "./Home.css";
 import Product from "../HomeProducts/HomePoducts";
 import SingleImage from "../singleCardonHome/SingleImage";
 import HeadSlider from "../Sliders/HeadSlider/HeadSlider";
+import MidSlider from "../Sliders/midSlider/MidSlider";
 
 const Home = () => {
+  
+  // data to send midslider component;
+  const data = [
+    {
+      image: "https://m.media-amazon.com/images/I/41q6GWoXycL._AC_SY200_.jpg",
+      discount: "Up to 84% off",
+    },
+    {
+      image: "https://m.media-amazon.com/images/I/31NmWpDfMZL._AC_SY200_.jpg",
+      discount: "Up to 76% off",
+      tag: "deal of the day",
+    },
+    {
+      image: "https://m.media-amazon.com/images/I/41O7cCoUoVL._AC_SY200_.jpg",
+      discount: "Up to 16000 off",
+      tag: "deal of the day",
+    },
+    {
+      image: "https://m.media-amazon.com/images/I/31V4e3EJQpL._AC_SY200_.jpg",
+      discount: "Up to 26% off",
+      tag: "deal of the day",
+    },
+    {
+      image: "https://m.media-amazon.com/images/I/314ffjDGMJS._AC_SY200_.jpg",
+      discount: "Up to 14600 off",
+      tag: "deal of the day",
+    },
+    {
+      image: "https://m.media-amazon.com/images/I/31ug-vujiiL._AC_SY200_.jpg",
+      discount: "Up to 29% off",
+      tag: "deal of the day",
+    },
+    {
+      image: "https://m.media-amazon.com/images/I/41zL6EeHU7L._AC_SY200_.jpg",
+      discount: "23% off",
+      tag: "",
+    },
+    {
+      image: "https://m.media-amazon.com/images/I/41B-0k0WSKL._AC_SY200_.jpg",
+      discount: "Up to 60% off",
+      tag: "deal of the day",
+    },
+    {
+      image: "https://m.media-amazon.com/images/I/51Q1tNCJgkS._AC_SY200_.jpg",
+      discount: "Up to 26% off",
+      tag: "deal of the day",
+    },
+    {
+      image: "https://m.media-amazon.com/images/I/41ufafu4kwL._AC_SY200_.jpg",
+      discount: "Up to 78% off",
+      tag: "deal of the day",
+    },
+    {
+      image: "https://m.media-amazon.com/images/I/71AgmuHLF6L._AC_SY200_.jpg",
+      discount: "Up to 84% off",
+      tag: "deal of the day",
+    },
+    {
+      image: "https://m.media-amazon.com/images/I/511HLRwoVCL._AC_SY200_.jpg",
+      discount: "Up to 77% off",
+    },
+    {
+      image: "https://m.media-amazon.com/images/I/51GtHXY7TAL._AC_SY200_.jpg",
+      discount: "Up to 30% off",
+      tag: "",
+    },
+    {
+      image: "https://m.media-amazon.com/images/I/51TqYkyaI3L._AC_SY200_.jpg",
+      discount: "Up to 87% off",
+      tag: "deal of the day",
+    },
+    {
+      image: "https://m.media-amazon.com/images/I/411JddN-UnL._AC_SY200_.jpg",
+      discount: "Up to 38% off",
+      tag: "",
+    },
+  ];
   return (
     <div className="home">
       <div className="home_container">
-        {/* <img
-          className="home__image"
-          src="https://m.media-amazon.com/images/I/51x7nrGlOrL._SX1500_.jpg"
-          alt=""
-        /> */}
         <div className="home__image">
           <HeadSlider />
         </div>
@@ -106,6 +179,11 @@ const Home = () => {
             title3="Fashion"
             title4="Electronics"
             tolink=" See more"
+          />
+        </div>
+        <div className="midslide__home">
+          <MidSlider
+            data={data}
           />
         </div>
       </div>
