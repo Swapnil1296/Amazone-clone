@@ -18,18 +18,18 @@ const responsive = {
     items: 1,
   },
 };
-const MidSlider = (data) => {
+const MidSlider = (data,) => {
     // geting data from home component
-     
+       
     const slidesData=data.data
-    // console.log("slidesData:", slidesData);
+    console.log("slidesData:", slidesData[0]);
   return (
     <div className="products_section">
       <div className="products_deal">
         <h2>Today's Deal</h2>
-        <button className="view_btn">View All</button>
+        <p>See all deals</p>
       </div>
-      <Divider />
+      <Divider className='divider' />
 
       <Carousel
         responsive={responsive}
@@ -49,13 +49,19 @@ const MidSlider = (data) => {
         {slidesData.map((e, i) => {
           return (
             <div className="products_items" key={i}>
-              <div className="product_img">
+              {e.image?<div className="product_img">
                 <img src={e.image} alt="product" />
+              </div> :""}
+              <div>
+                {e.discount ? <div className="products__titles">
+                  <div className="product__offer">
+                    <p className="products_discount">{e.discount}</p>
+                  </div>
+                  <p className="product__deals" style={{color: "#007185"}}>
+                    {e.tag}
+                  </p>
+                </div> : ''}
               </div>
-              <p className="products_name">{e.discount}</p>
-              <p className="products_offer" style={{color: "#  007185"}}>
-                {e.tag}
-              </p>
             </div>
           );
         })}

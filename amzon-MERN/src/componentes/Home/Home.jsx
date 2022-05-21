@@ -4,85 +4,11 @@ import Product from "../HomeProducts/HomePoducts";
 import SingleImage from "../singleCardonHome/SingleImage";
 import HeadSlider from "../Sliders/HeadSlider/HeadSlider";
 import MidSlider from "../Sliders/midSlider/MidSlider";
-
+import {dataOne} from "../data/slidersdata";
+import {dataTwo} from "../data/slidersdata";
 const Home = () => {
-  
   // data to send midslider component;
-  const data = [
-    {
-      image: "https://m.media-amazon.com/images/I/41q6GWoXycL._AC_SY200_.jpg",
-      discount: "Up to 84% off",
-    },
-    {
-      image: "https://m.media-amazon.com/images/I/31NmWpDfMZL._AC_SY200_.jpg",
-      discount: "Up to 76% off",
-      tag: "deal of the day",
-    },
-    {
-      image: "https://m.media-amazon.com/images/I/41O7cCoUoVL._AC_SY200_.jpg",
-      discount: "Up to 16000 off",
-      tag: "deal of the day",
-    },
-    {
-      image: "https://m.media-amazon.com/images/I/31V4e3EJQpL._AC_SY200_.jpg",
-      discount: "Up to 26% off",
-      tag: "deal of the day",
-    },
-    {
-      image: "https://m.media-amazon.com/images/I/314ffjDGMJS._AC_SY200_.jpg",
-      discount: "Up to 14600 off",
-      tag: "deal of the day",
-    },
-    {
-      image: "https://m.media-amazon.com/images/I/31ug-vujiiL._AC_SY200_.jpg",
-      discount: "Up to 29% off",
-      tag: "deal of the day",
-    },
-    {
-      image: "https://m.media-amazon.com/images/I/41zL6EeHU7L._AC_SY200_.jpg",
-      discount: "23% off",
-      tag: "",
-    },
-    {
-      image: "https://m.media-amazon.com/images/I/41B-0k0WSKL._AC_SY200_.jpg",
-      discount: "Up to 60% off",
-      tag: "deal of the day",
-    },
-    {
-      image: "https://m.media-amazon.com/images/I/51Q1tNCJgkS._AC_SY200_.jpg",
-      discount: "Up to 26% off",
-      tag: "deal of the day",
-    },
-    {
-      image: "https://m.media-amazon.com/images/I/41ufafu4kwL._AC_SY200_.jpg",
-      discount: "Up to 78% off",
-      tag: "deal of the day",
-    },
-    {
-      image: "https://m.media-amazon.com/images/I/71AgmuHLF6L._AC_SY200_.jpg",
-      discount: "Up to 84% off",
-      tag: "deal of the day",
-    },
-    {
-      image: "https://m.media-amazon.com/images/I/511HLRwoVCL._AC_SY200_.jpg",
-      discount: "Up to 77% off",
-    },
-    {
-      image: "https://m.media-amazon.com/images/I/51GtHXY7TAL._AC_SY200_.jpg",
-      discount: "Up to 30% off",
-      tag: "",
-    },
-    {
-      image: "https://m.media-amazon.com/images/I/51TqYkyaI3L._AC_SY200_.jpg",
-      discount: "Up to 87% off",
-      tag: "deal of the day",
-    },
-    {
-      image: "https://m.media-amazon.com/images/I/411JddN-UnL._AC_SY200_.jpg",
-      discount: "Up to 38% off",
-      tag: "",
-    },
-  ];
+
   return (
     <div className="home">
       <div className="home_container">
@@ -115,7 +41,11 @@ const Home = () => {
             tolink="Visit store"
           />
           <div className="singleImge__div">
-            <SingleImage />
+            <SingleImage
+              title="Up to 70% off | Clearance store"
+              image="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Electronics/Clearance/Clearance_store_Desktop_CC_1x._SY304_CB628315133_.jpg"
+              tolink="See more"
+            />
           </div>
 
           <Product
@@ -182,8 +112,55 @@ const Home = () => {
           />
         </div>
         <div className="midslide__home">
-          <MidSlider
-            data={data}
+          <MidSlider title="Today's Deal" data={dataOne} />
+        </div>
+        <div className="midslide__home">
+          <MidSlider title="Today's Deal" data={dataTwo} />
+        </div>
+        <div className="home__row">
+          <Product
+            header="Cookware & dining"
+            image1="https://images-eu.ssl-images-amazon.com/images/G/31/IN-hq/2019/img/Kitchen/XCM_Manual_186x116_1198417XCM_Manual_1198417__1_1573567224_jpg_LOWER_QL85_._SY116_CB448746450_.jpg"
+            image2="https://images-eu.ssl-images-amazon.com/images/G/31/IN-hq/2019/img/Kitchen/XCM_Manual_186x116_1198417XCM_Manual_1198417__2_1573567224_jpg_LOWER_QL85_._SY116_CB448746415_.jpg"
+            image3="https://images-eu.ssl-images-amazon.com/images/G/31/IN-hq/2019/img/Kitchen/XCM_Manual_186x116_1198417XCM_Manual_3_copyx400x2C5x_1573713358_jpg_LOWER_QL85_._SY116_CB448746425_.jpg"
+            image4="https://images-eu.ssl-images-amazon.com/images/G/31/IN-hq/2019/img/Kitchen/XCM_Manual_186x116_1198417XCM_Manual_1198417__4_1573567224_jpg_LOWER_QL85_._SY116_CB448746450_.jpg"
+            title1="Gas stoves"
+            title2="Cookware"
+            title3="Kitchen storage"
+            title4="Tableware"
+            tolink="See more"
+          />
+          <Product
+            header="Electronics devices for home office"
+            image1="https://images-eu.ssl-images-amazon.com/images/G/31/img21/PC/Computers/GW/DBQC/D21343116_IN_CEPC_BAU_GW_graphics_March21_dbqc0.5x_5._SY116_CB655805757_.jpg"
+            image2="https://images-eu.ssl-images-amazon.com/images/G/31/img21/PC/Computers/GW/DBQC/D21343116_IN_CEPC_BAU_GW_graphics_March21_dbqc0.5x_6._SY116_CB655805757_.jpg"
+            image3="https://images-eu.ssl-images-amazon.com/images/G/31/img21/PC/Computers/GW/DBQC/D21343116_IN_CEPC_BAU_GW_graphics_March21_dbqc0.5x_7._SY116_CB655805757_.jpg"
+            image4="https://images-eu.ssl-images-amazon.com/images/G/31/img21/PC/Computers/GW/DBQC/D21343116_IN_CEPC_BAU_GW_graphics_March21_dbqc0.5x_8._SY116_CB655805757_.jpg"
+            title1="Smartwatches & fitness trackers"
+            title2="Tablets"
+            title3="Laptops"
+            title4="Monitors"
+            tolink=" See all"
+          />
+          <div className="singleImge__div">
+            <SingleImage
+              title="Save 10% with less effort"
+              image="https://images-eu.ssl-images-amazon.com/images/G/31/SnS/X-site/2022winter/XCM_Manual_ORIGIN_1402790_2138292_4419909_IN_SNS_GW_Spring_379x304_1X._SY304_CB624224587_.jpg"
+              tolink="Subscribe & save"
+            />
+          </div>
+
+          <Product
+            header="Clothing for all"
+            image1="https://images-eu.ssl-images-amazon.com/images/G/31/img2020/img21/apparelGW/WRS_DEC_21/PC/1x/WRS-GW-PC-QC_01._SY116_CB651157265_.jpg"
+            image2="https://images-eu.ssl-images-amazon.com/images/G/31/img2020/img21/apparelGW/WRS_DEC_21/PC/1x/WRS-GW-PC-QC_02._SY116_CB651157265_.jpg"
+            image3="https://images-eu.ssl-images-amazon.com/images/G/31/img2020/img21/apparelGW/WRS_DEC_21/PC/1x/WRS-GW-PC-QC2_01._SY116_CB651157265_.jpg"
+            image4="https://images-eu.ssl-images-amazon.com/images/G/31/img2020/img21/apparelGW/WRS_DEC_21/PC/1x/WRS-GW-PC-QC2_02._SY116_CB651157265_.jpg"
+            title1="Kurtas | Upto 70% off"
+            title2="Sarees | Upto 70% off"
+            title3="T-shirts | Up to 70% off"
+            title4="Jeans | Up to 70% off"
+            tolink=" See all "
           />
         </div>
       </div>

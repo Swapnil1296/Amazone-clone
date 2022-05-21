@@ -34,10 +34,7 @@
     mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 }
 .midslide__home{
-        border: 1px solid red;
         width: 98%;
-        height: 400px;
         margin: auto;
-        /* margin-left: 5px;
-        margin-right: 5px; */
+       
 }
