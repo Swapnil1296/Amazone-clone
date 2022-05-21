@@ -112,7 +112,7 @@ const Home = () => {
           />
         </div>
         <div className="midslide__home">
-          <MidSlider title="Today's Deal" data={dataOne} />
+          <MidSlider  data={dataOne} />
         </div>
         <div className="midslide__home">
           <MidSlider title="Today's Deal" data={dataTwo} />

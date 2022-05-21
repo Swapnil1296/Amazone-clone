@@ -21,12 +21,12 @@ const responsive = {
 const MidSlider = (data,) => {
     // geting data from home component
        
-    const slidesData=data.data
-    console.log("slidesData:", slidesData[0]);
+  const slidesData = data.data.slides;
+    // console.log("slidesData:", slidesData);
   return (
     <div className="products_section">
       <div className="products_deal">
-        <h2>Today's Deal</h2>
+        <h2>{data.data.title}</h2>
         <p>See all deals</p>
       </div>
       <Divider className='divider' />
@@ -38,7 +38,7 @@ const MidSlider = (data,) => {
         swipeable={true}
         centerMode={true}
         autoPlay={true}
-        autoPlaySpeed={4000}
+        autoPlaySpeed={3000}
         keyBoardControl={true}
         showDots={false}
         removeArrowOnDeviceType={["tablet", "mobile"]}

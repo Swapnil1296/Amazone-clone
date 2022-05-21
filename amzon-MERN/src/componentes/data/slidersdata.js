@@ -1,8 +1,8 @@
+const dataOne = {
 
+  title: ["Today's deals"],
 
-const dataOne = [
-    
-
+  slides: [
     {
       image: "https://m.media-amazon.com/images/I/41q6GWoXycL._AC_SY200_.jpg",
       discount: "Up to 84% off",
@@ -76,51 +76,53 @@ const dataOne = [
       discount: "Up to 38% off",
       tag: "",
     },
-  ];
+  ],
+};
 
+const dataTwo = {
+  title: ["Bike accessories"],
+  slides: [
+    {
+      image: "https://m.media-amazon.com/images/I/717wYrO+b0L._AC_SY200_.jpg",
+      discount: "",
+      tag: "",
+    },
+    {
+      image: "https://m.media-amazon.com/images/I/818kmzObgCL._AC_SY200_.jpg",
+      discount: "",
+      tag: "",
+    },
+    {
+      image: "https://m.media-amazon.com/images/I/71t9-9MtwkL._AC_SY200_.jpg",
+      discount: "",
+      tag: "",
+    },
+    {
+      image: "https://m.media-amazon.com/images/I/41oCKGsh-GL._AC_SY200_.jpg",
+      discount: "",
+      tag: "",
+    },
+    {
+      image: "https://m.media-amazon.com/images/I/71fRFM4eMYS._AC_SY200_.jpg",
+      discount: "",
+      tag: "",
+    },
+    {
+      image: "https://m.media-amazon.com/images/I/91Jg-E1tygL._AC_SY200_.jpg",
+      discount: "",
+      tag: "",
+    },
+    {
+      image: "https://m.media-amazon.com/images/I/31NAQirJ+sL._AC_SY200_.jpg",
+      discount: "",
+      tag: "",
+    },
+    {
+      image: "https://m.media-amazon.com/images/I/819Gt9Act8L._AC_SY200_.jpg",
+      discount: "",
+      tag: "",
+    },
+  ],
+};
 
-const dataTwo = [
-  {
-    image: "https://m.media-amazon.com/images/I/717wYrO+b0L._AC_SY200_.jpg",
-    discount: "",
-    tag: "",
-  },
-  {
-    image: "https://m.media-amazon.com/images/I/818kmzObgCL._AC_SY200_.jpg",
-    discount: "",
-    tag: "",
-  },
-  {
-    image: "https://m.media-amazon.com/images/I/71t9-9MtwkL._AC_SY200_.jpg",
-    discount: "",
-    tag: "",
-  },
-  {
-    image: "https://m.media-amazon.com/images/I/41oCKGsh-GL._AC_SY200_.jpg",
-    discount: "",
-    tag: "",
-  },
-  {
-    image: "https://m.media-amazon.com/images/I/71fRFM4eMYS._AC_SY200_.jpg",
-    discount: "",
-    tag: "",
-  },
-  {
-    image: "https://m.media-amazon.com/images/I/91Jg-E1tygL._AC_SY200_.jpg",
-    discount: "",
-    tag: "",
-  },
-  {
-    image: "https://m.media-amazon.com/images/I/31NAQirJ+sL._AC_SY200_.jpg",
-    discount: "",
-    tag: "",
-  },
-  {
-    image: "https://m.media-amazon.com/images/I/819Gt9Act8L._AC_SY200_.jpg",
-    discount: "",
-    tag: "",
-  },
-  
-];
-
-export {dataTwo, dataOne}
+export {dataTwo, dataOne};

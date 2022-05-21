@@ -11,14 +11,16 @@
 
 .products_deal {
     display: flex;
-    width: 19%;
-    justify-content: space-between;
+    /* width: 19%; */
+    max-width: 30%;
+    /* justify-content: space-between; */
     align-items: center;
     margin-top: 15px;
     padding: 20px;
 }
 .products_deal>p{
     margin-top: 30px;
+    margin-left: 10px;
     font-size: 14px;
     font-family:sans-serif;
     color: #4297ac;
