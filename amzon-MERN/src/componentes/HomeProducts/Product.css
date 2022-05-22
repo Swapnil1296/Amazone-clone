@@ -23,10 +23,13 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     width: 100%;
+   
 }
 
 .product__element__container>img {
     width: 100%;
+    object-fit: contain;
+   
   
 }
 

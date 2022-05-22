@@ -1,9 +1,9 @@
-import React from 'react'
-import './midSlider.css'
+import React from "react";
+import "./midSlider.css";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 // import  {sliderData} from './slidesData'
-import { Divider } from '@mui/material';
+import {Divider} from "@mui/material";
 const responsive = {
   desktop: {
     breakpoint: {max: 3000, min: 1024},
@@ -18,18 +18,18 @@ const responsive = {
     items: 1,
   },
 };
-const MidSlider = (data,) => {
-    // geting data from home component
-       
+const MidSlider = (data) => {
+  // geting data from home component
+
   const slidesData = data.data.slides;
-    // console.log("slidesData:", slidesData);
+  // console.log("slidesData:", slidesData);
   return (
     <div className="products_section">
       <div className="products_deal">
         <h2>{data.data.title}</h2>
         <p>See all deals</p>
       </div>
-      <Divider className='divider' />
+      <Divider className="divider" />
 
       <Carousel
         responsive={responsive}
@@ -49,18 +49,32 @@ const MidSlider = (data,) => {
         {slidesData.map((e, i) => {
           return (
             <div className="products_items" key={i}>
-              {e.image?<div className="product_img">
-                <img src={e.image} alt="product" />
-              </div> :""}
+              {e.discount ? (
+                <div className="product_img">
+                  <img src={e.image} alt="product" className="product_image__image"/>
+                </div>
+              ) : (
+                <div className="product_img_two">
+                  <img
+                    src={e.image}
+                    alt="product"
+                    className="product_img_two__image"
+                  />
+                </div>
+              )}
               <div>
-                {e.discount ? <div className="products__titles">
-                  <div className="product__offer">
-                    <p className="products_discount">{e.discount}</p>
+                {e.discount ? (
+                  <div className="products__titles">
+                    <div className="product__offer">
+                      <p className="products_discount">{e.discount}</p>
+                    </div>
+                    <p className="product__deals" style={{color: "#007185"}}>
+                      {e.tag}
+                    </p>
                   </div>
-                  <p className="product__deals" style={{color: "#007185"}}>
-                    {e.tag}
-                  </p>
-                </div> : ''}
+                ) : (
+                  ""
+                )}
               </div>
             </div>
           );
@@ -70,4 +84,4 @@ const MidSlider = (data,) => {
   );
 };
 
-export default MidSlider
+export default MidSlider;

@@ -38,3 +38,8 @@
         margin: auto;
        
 }
+.banner__image{
+ width: 80%;
+ margin: auto;
+ margin-top: 15px;
+}
