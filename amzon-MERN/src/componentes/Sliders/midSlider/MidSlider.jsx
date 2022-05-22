@@ -29,7 +29,7 @@ const MidSlider = (data) => {
         <h2>{data.data.title}</h2>
         <p>See all deals</p>
       </div>
-      <Divider className="divider" />
+      <Divider/>
 
       <Carousel
         responsive={responsive}
