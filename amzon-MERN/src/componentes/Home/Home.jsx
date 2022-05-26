@@ -4,8 +4,10 @@ import Product from "../HomeProducts/HomePoducts";
 import SingleImage from "../singleCardonHome/SingleImage";
 import HeadSlider from "../Sliders/HeadSlider/HeadSlider";
 import MidSlider from "../Sliders/midSlider/MidSlider";
-import {dataFive, dataFour, dataOne, dataSeven, dataSix, dataThree} from "../data/slidersdata";
+import {browseHistory, dataFive, dataFour, dataOne, dataSeven, dataSix, dataThree} from "../data/slidersdata";
 import {dataTwo} from "../data/slidersdata";
+import { Divider } from "@mui/material";
+import BottomSlider from "../Sliders/BottomSlider/BottomSlider";
 const Home = () => {
   // data to send midslider component;
 
@@ -265,6 +267,8 @@ const Home = () => {
         <div className="midslide__home">
           <MidSlider data={dataSeven} />
         </div>
+        <Divider />
+        <BottomSlider data={browseHistory} />
       </div>
     </div>
   );

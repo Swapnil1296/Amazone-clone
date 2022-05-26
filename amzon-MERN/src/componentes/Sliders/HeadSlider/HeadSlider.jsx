@@ -16,6 +16,7 @@ const HeadSlider = () => {
       <Carousel
         className="carasousel"
         autoPlay={true}
+        autoPlaySpeed={3000}
         infiniteLoop={true}
         indicators={false}
         navButtonsAlwaysVisible={false}
@@ -26,7 +27,7 @@ const HeadSlider = () => {
           style: {
             background: "#fff",
             color: "#494949",
-            borderRadius: 0, 
+            borderRadius: 0,
             marginTop: -150,
             height: "108px",
           },

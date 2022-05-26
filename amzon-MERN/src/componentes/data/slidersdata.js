@@ -347,4 +347,274 @@ const dataSeven = {
   ],
 };
 
-export {dataTwo, dataOne, dataThree, dataFour, dataFive, dataSix,dataSeven};
+const browseHistory = {
+  title: ["Customers who viewed items in your browsing history also viewed"],
+
+  history: [
+    {
+      url: "https://images-eu.ssl-images-amazon.com/images/I/51AMqyp+sfL._AC_UL160_SR160,160_.jpg",
+      description:
+        "OnePlus Buds Z2 | Obsidian Black | Truly Wireless Earbuds | Active Noise Cancellation OnePlus Buds Z2 | Obsidian Black | Truly Wireless Earbuds | Active Noise Cancellation",
+      rating: "⭐⭐⭐⭐⭐",
+      price: "₹4,999.00",
+      delivery:
+        "Get it by Saturday, May 28 FREE Delivery over ₹499. Fulfilled by Amazon.",
+    },
+    {
+      url: "https://images-eu.ssl-images-amazon.com/images/I/912lutWajxL._AC_UL160_SR160,160_.jpg",
+      description:
+        "Dekoni Audio Moldable Foam Ear Tips Premium Memory Foam Isolation Earphone Tips - 4.9mm 3 Pack SM MED Lrg Sample Pack Black (EPZ-Mercury-PL) 4 3 out of 5 stars",
+      rating: "⭐⭐⭐⭐",
+      price: "₹3,576.00",
+      delivery:
+        "Get it Jun 7 - 9 FREE Delivery Usually dispatched in 3 to 4 days.",
+    },
+    {
+      url: "https://images-eu.ssl-images-amazon.com/images/I/51creylSFEL._AC_UL160_SR160,160_.jpg",
+      description:
+        "JBL Tune 230NC TWS, Active Noise Cancellation Earbuds with Mic, Massive 40 Hrs Playtime with Speed Charge, Adjustable EQ with JBL APP, 4Mics for Perfect Calls, Google Fast Pair, Bluetooth 5.2 (Black) 4.1 out of 5 stars",
+      rating: "⭐⭐⭐⭐⭐",
+      price: "₹5,499.00",
+      delivery:
+        "Get it by Sunday, May 29 FREE Delivery over ₹499. Fulfilled by Amazon.",
+    },
+    {
+      url: "https://images-eu.ssl-images-amazon.com/images/I/81r7ZwWhpgL._AC_UL160_SR160,160_.jpg",
+      description:
+        "Comply Isolation T-400 Wired in Ear Earphone Tips Without Mic (Black) 4.2 out of 5 stars",
+      rating: "⭐⭐⭐⭐⭐",
+      price: "₹2,336.00",
+      delivery:
+        "Get it Jun 11 - 18 FREE Delivery Usually dispatched in 6 to 10 days.",
+    },
+    {
+      url: "https://images-eu.ssl-images-amazon.com/images/I/51HBom8xz7L._AC_UL160_SR160,160_.jpg",
+      description:
+        "Boat Airdopes 141 42H Playtime, Beast Mode Enx Tech, ASAP Charge, Iwp, Ipx4 Water Resistance, Smooth Touch Controls Bluetooth Truly Wireless in Ear Earbuds with Mic (Bold Black) 3.9 out of 5 stars",
+      rating: "⭐⭐⭐⭐⭐",
+      price: "₹1,499.00",
+      delivery:
+        "Get it by Friday, May 27 FREE Delivery over ₹499. Fulfilled by Amazon.",
+    },
+    {
+      url: "https://images-eu.ssl-images-amazon.com/images/I/61ajjnIHaPL._AC_UL160_SR160,160_.jpg",
+      description:
+        "realme Buds Q2s Bluetooth Truly Wireless in Ear Earbuds with Mic (Black) 4.0 out of 5 stars",
+      rating: "⭐⭐⭐⭐⭐",
+      price: "₹1,999.00",
+      delivery:
+        "Get it by Saturday, May 28 FREE Delivery over ₹499. Fulfilled by Amazon.",
+    },
+    {
+      url: "https://images-eu.ssl-images-amazon.com/images/I/21iiUCHiThL._AC_UL160_SR160,160_.jpg",
+      description:
+        "IMcreativ3® Silicone Cover for OnePlus Buds (Yellow) 3.8 out of 5 stars",
+      rating: "⭐⭐⭐⭐⭐",
+      price: "₹299.00 ",
+      delivery: "FREE Delivery",
+    },
+    {
+      url: "https://images-eu.ssl-images-amazon.com/images/I/41i3U6EdkbL._AC_UL160_SR160,160_.jpg",
+      description:
+        "JBL Wave 200 TWS, True Wireless Earbuds with Mic, JBL Deep Bass Sound, up to 20Hrs Playtime, use Single Earbud or Both, Bluetooth 5.0, Type C & Voice Assistant Support for Mobile Phones (Black) 4.0 out of 5 stars",
+      rating: "⭐⭐⭐⭐⭐",
+      price: "₹3,999.00",
+      delivery:
+        "Get it by Saturday, May 28 FREE Delivery over ₹499. Fulfilled by Amazon. Ends in 6 days ",
+    },
+    {
+      url: "https://images-eu.ssl-images-amazon.com/images/I/51jOTvYdLsL._AC_UL160_SR160,160_.jpg",
+      description:
+        "Noise Air Buds Pro Bluetooth Truly Wireless in Ear Earbuds with Active Noise Cancellation, with Mic, Transparency Mode, Ergonomic Fit and Hyper Sync Technology (Celeste Blue) 3.9 out of 5 stars",
+      rating: "⭐⭐⭐⭐⭐",
+      price: "₹2,799.00",
+      delivery:
+        "Get it by Monday, May 30 FREE Delivery over ₹499. Fulfilled by Amazon.",
+    },
+    {
+      url: "https://images-eu.ssl-images-amazon.com/images/I/51GP1njJ+SL._AC_UL160_SR160,160_.jpg",
+      description:
+        "Blaupunkt BTW07 ANC Moksha-30db, True Wireless Earbuds, Flip top Rotatory Design, 40H Playtime, TurboVolt Fast Charging, CRISPR ENC Tech Quad Mics, GameOn with 80ms Low Latency(Black) 3.8 out of 5 stars",
+      rating: "⭐⭐⭐⭐⭐",
+      price: "₹2,499.00",
+      delivery:
+        "Get it by Saturday, May 28 FREE Delivery over ₹499. Fulfilled by Amazon.",
+    },
+    {
+      url: "https://images-eu.ssl-images-amazon.com/images/I/71WdDANbqDL._AC_UL160_SR160,160_.jpg",
+      description:
+        "realme Buds Air 2 with Active Noise Cancellation (ANC) Bluetooth Headset (Closer Gold, True Wireless) 3.7 out of 5 stars",
+      rating: "⭐⭐⭐⭐⭐",
+      price: "₹2,999.00",
+      delivery:
+        "Get it by Saturday, May 28 FREE Delivery over ₹499. Fulfilled by Amazon.",
+    },
+    {
+      url: "https://images-eu.ssl-images-amazon.com/images/I/71V--WZVUIL._AC_UL160_SR160,160_.jpg",
+      description:
+        "OnePlus Nord CE 2 Lite 5G (Black Dusk, 6GB RAM, 128GB Storage) 4.0 out of 5 stars",
+      rating: "⭐⭐⭐⭐⭐",
+      price: "₹19,999.00",
+      delivery:
+        "Get it by Saturday, May 28 FREE Delivery over ₹499. Fulfilled by Amazon. Ends in 6 days ",
+    },
+    {
+      url: "https://images-eu.ssl-images-amazon.com/images/I/71F4jU7MRUS._AC_UL160_SR160,160_.jpg",
+      description:
+        "Samsung Galaxy M32 (Light Blue, 4GB RAM, 64GB Storage) 6 Months Free Screen Replacement for Prime 4.1 out of 5 stars",
+      rating: "⭐⭐⭐⭐⭐",
+      price: "₹11,999.00",
+      delivery:
+        "Get it by Saturday, May 28 FREE Delivery over ₹499. Fulfilled by Amazon. Ends in 6 days ",
+    },
+    {
+      url: "https://images-eu.ssl-images-amazon.com/images/I/41xu1MNEJnL._AC_UL160_SR160,160_.jpg",
+      description:
+        "Grippie Front & Back Cover 360 Degree Protection Case Cover Compatible with iOS Nord Buds Truly Stylish Silicon Case Cover |Earbuds is not Included| (Red)",
+      rating: "⭐⭐⭐⭐⭐",
+      price: "₹349.00",
+      delivery: "FREE Delivery",
+    },
+    {
+      url: "https://images-eu.ssl-images-amazon.com/images/I/61O6B+XdSjL._AC_UL160_SR160,160_.jpg",
+      description:
+        "TAGG Rogue 200GT Wireless Gaming Earbuds || 45ms Low Latency for Gaming || Dual Mic with ENC for Best Calling || Wireless Earbuds Made for Comfort Gaming || Black 4.1 out of 5 stars",
+      rating: "⭐⭐⭐⭐⭐",
+      price: "₹1,799.00",
+      delivery:
+        "Get it by Sunday, May 29 FREE Delivery over ₹499. Fulfilled by Amazon.",
+    },
+    {
+      url: "https://images-eu.ssl-images-amazon.com/images/I/51sj+JxisFL._AC_UL160_SR160,160_.jpg",
+      description:
+        "Sony Wf-C500 Bluetooth Truly Wireless in Ear Earbuds with 20 Hrs Battery, with Mic for Phone Calls, Fast Pair (Black) 4.2 out of 5 stars",
+      rating: "⭐⭐⭐⭐⭐",
+      price: "₹5,799.00",
+      delivery:
+        "Get it by Saturday, May 28 FREE Delivery over ₹499. Fulfilled by Amazon.",
+    },
+    {
+      url: "https://images-eu.ssl-images-amazon.com/images/I/61Y-umKEeJL._AC_UL160_SR160,160_.jpg",
+      description:
+        "Probuds 21 | 45 Hrs Playtime with 60MaH Bull Battery Earbuds | Touch Control Truly Wireless Ear Buds(TWS) with Mic | Type-C Fast Charging Bluetooth Wireless Earphones, Voice Assistant & IPX4 (White) 4.0 out of 5 stars",
+      rating: "⭐⭐⭐⭐⭐",
+      price: "₹1,299.00 ",
+      delivery:
+        "Get it by Saturday, May 28 FREE Delivery over ₹499. Fulfilled by Amazon. Ends in 29:44:31 ",
+    },
+    {
+      url: "https://images-eu.ssl-images-amazon.com/images/I/51jJs-kCh6S._AC_UL160_SR160,160_.jpg",
+      description:
+        "Oneplus Buds Pro Bluetooth Truly Wireless in Ear Earbuds with mic (Matte Black) 4.4 out of 5 stars",
+      rating: "⭐⭐⭐⭐⭐",
+      price: "₹9,990.00",
+      delivery:
+        "Get it by Saturday, May 28 FREE Delivery over ₹499. Fulfilled by Amazon.",
+    },
+    {
+      url: "https://images-eu.ssl-images-amazon.com/images/I/51UhwaQXCpL._AC_UL160_SR160,160_.jpg",
+      description:
+        "Oneplus Bullets Z2 Bluetooth Wireless in Ear Earphones with Mic, Bombastic Bass - 12.4 Mm Drivers, 10 Mins Charge - 20 Hrs Music, 30 Hrs Battery Life, Launched in April 2022 (Magico Black) 4.1 out of 5 stars",
+      rating: "⭐⭐⭐⭐⭐",
+      price: "₹1,999.00",
+      delivery:
+        "Get it by Saturday, May 28 FREE Delivery over ₹499. Fulfilled by Amazon.",
+    },
+    {
+      url: "https://images-eu.ssl-images-amazon.com/images/I/516+h7HKsyL._AC_UL160_SR160,160_.jpg",
+      description:
+        "Samsung Galaxy Buds Pro | 99% Noise Cancellation, Wireless Charging, 28 Hours Playtime | Violet 4.2 out of 5 stars",
+      rating: "⭐⭐⭐⭐⭐",
+      price: "₹7,990.00",
+      delivery:
+        "Get it by Saturday, May 28 FREE Delivery over ₹499. Fulfilled by Amazon.",
+    },
+    {
+      url: "https://images-eu.ssl-images-amazon.com/images/I/51opUuEvEhL._AC_UL160_SR160,160_.jpg",
+      description:
+        "OPPO Enco Buds Bluetooth True Wireless in Ear Earbuds(TWS) with Mic, 24H Battery Life, Supports Dolby Atmos Noise Cancellation During Calls, IP54 Dust & Water Resistant,(White, True Wireless) 4.1 out of 5 stars",
+      rating: "⭐⭐⭐⭐⭐",
+      price: "₹1,799.00 ",
+      delivery:
+        "FREE Delivery over ₹499. Fulfilled by Amazon. Usually dispatched in 3 to 4 weeks.",
+    },
+    {
+      url: "https://images-eu.ssl-images-amazon.com/images/I/81phFG96VXL._AC_UL160_SR160,160_.jpg",
+      description:
+        "realme Narzo 50 Pro 5G (Hyper Blue 6GB RAM+128GB Storage) Dimensity 920 5G Processor |48MP Ultra HD Camera",
+      rating: "⭐⭐⭐⭐⭐",
+      price: "₹21,999.00",
+      delivery: "",
+    },
+    {
+      url: "https://images-eu.ssl-images-amazon.com/images/I/41HScrgjysL._AC_UL160_SR160,160_.jpg",
+      description:
+        "Grippie Front & Back Cover 360 Degree Protection Case Cover Compatible with iOS Nord Buds Truly Stylish Silicon Case Cover |Earbuds is not Included| (Black)",
+      rating: "⭐⭐⭐⭐⭐",
+      price: "₹349.00 ",
+      delivery: "FREE Delivery",
+    },
+    {
+      url: "https://images-eu.ssl-images-amazon.com/images/I/518Ba+IiZ+L._AC_UL160_SR160,160_.jpg",
+      description:
+        "Uno Minda Wtunes-400-Ver Android 8.1V 1Gb/16Gb Bluetooth Full Hd 1080P Android System for Verna",
+      rating: "⭐⭐⭐⭐⭐",
+      price: "₹25,870.00",
+      delivery:
+        "Get it by Monday, May 30 FREE Delivery over ₹499. Fulfilled by Amazon.Only 2 left in stock.",
+    },
+    {
+      url: "https://images-eu.ssl-images-amazon.com/images/I/714mlYC0LgL._AC_UL160_SR160,160_.jpg",
+      description:
+        "curox || Shower Cap Bath Shower Cap For Women Shower Caps For Women Reusable Waterproof Women Shower Cap Girls Shower Cap Shower Cap Adults Women Girls (Multicolored and Print,(Pack3)",
+      rating: "⭐⭐⭐⭐⭐",
+      price: "₹179.00",
+      delivery: "FREE Delivery",
+    },
+    {
+      url: "https://images-eu.ssl-images-amazon.com/images/I/615YGGce1-L._AC_UL160_SR160,160_.jpg",
+      description:
+        "iQOO Z6 Pro 5G (Legion Sky, 6GB RAM, 128GB Storage) | Snapgradon 778G | 66W FlashCharge | 1300 nits Peak Brightness | HDR10+ | Extra Rs.2000 Off on Exchange 4.1 out of 5 stars",
+      rating: "⭐⭐⭐⭐⭐",
+      price: "₹23,999.00",
+      delivery:
+        "Get it by Sunday, May 29 FREE Delivery over ₹499. Fulfilled by Amazon.",
+    },
+    {
+      url: "https://images-eu.ssl-images-amazon.com/images/I/31uELnIrChL._AC_UL160_SR160,160_.jpg",
+      description:
+        "MileStore™ Silicone Protective Premium Logo Case Cover for OnePlus Earbuds Z TWS, Anti Fall Anti Dust, with Hook Earphone Case *Case Cover only* (OnePlus Earbuds Z, Blue) 3.8 out of 5 stars",
+      rating: "⭐⭐⭐⭐⭐",
+      price: "₹249.00",
+      delivery: "FREE Delivery",
+    },
+    {
+      url: "https://images-eu.ssl-images-amazon.com/images/I/41YZOF8VpcS._AC_UL160_SR160,160_.jpg",
+      description:
+        "Fast Charge30 Power Adapter Charger with  Type C to Type C Charging Cable Compatible for OnePlus 9,9Pro,9R,8T,8,8pro,Nord,7 Pro,7T,7T Pro and Dash Charger for OnePlus 3,3T,5,5T,6,6T,7",
+      rating: "⭐⭐⭐⭐⭐",
+      price: "₹649.00",
+      delivery: "₹65.00 shipping",
+    },
+    {
+      url: "https://images-eu.ssl-images-amazon.com/images/I/510lSy3gKJL._AC_UL160_SR160,160_.jpg",
+      description:
+        "Oneplus Buds Pro Bluetooth Truly Wireless in Ear Earbuds with mic (Radiant Silver) 3.9 out of 5 stars",
+      rating: "⭐⭐⭐⭐⭐",
+      price: "₹9,999.00",
+      delivery:
+        "Get it by Sunday, May 29 FREE Delivery over ₹499. Fulfilled by Amazon.Ends in 5 days ",
+    },
+    {
+      url: "https://images-eu.ssl-images-amazon.com/images/I/716688QgaxL._AC_UL160_SR160,160_.jpg",
+      description:
+        "Boult Audio AirBass PowerBuds TWS Earbuds with 120 Hours Total Playtime, Inbuilt Powerbank, Type-C Fast Charging and IPX7 Fully Waterproof (Black) 3.8 out of 5 stars",
+      rating: "⭐⭐⭐⭐⭐",
+      price: "₹1,799.00",
+      delivery:
+        "Get it by Sunday, May 29 FREE Delivery over ₹499. Fulfilled by Amazon. Ends in 03:12:44 86% Claimed",
+    },
+  ],
+};
+
+export {dataTwo, dataOne, dataThree, dataFour, dataFive, dataSix, dataSeven,browseHistory};

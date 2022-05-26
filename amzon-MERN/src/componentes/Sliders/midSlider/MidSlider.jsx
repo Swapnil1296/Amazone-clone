@@ -38,7 +38,7 @@ const MidSlider = (data) => {
         swipeable={true}
         centerMode={true}
         autoPlay={true}
-        autoPlaySpeed={3000}
+        autoPlaySpeed={4000}
         keyBoardControl={true}
         showDots={false}
         removeArrowOnDeviceType={["tablet", "mobile"]}
