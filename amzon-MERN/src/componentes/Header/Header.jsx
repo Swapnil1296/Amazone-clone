@@ -5,6 +5,7 @@ import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import Badge from "@mui/material/Badge";
 import Avatar from "@mui/material/Avatar";
+import { NavLink } from "react-router-dom";
 
 
 
@@ -16,11 +17,13 @@ import Avatar from "@mui/material/Avatar";
 const Header = () => {
   return (
     <div className="header">
-      <img
-        className="header_logo"
-        src="http://pngimg.com/uploads/amazon/amazon_PNG11.png"
-        alt="image"
-      />
+      <NavLink to ="/">
+        <img
+          className="header_logo"
+          src="http://pngimg.com/uploads/amazon/amazon_PNG11.png"
+          alt="image"
+        />
+      </NavLink>
       <div className="header_option">
         <LocationOnOutlinedIcon className="header__locationIcon" />
       </div>
@@ -37,7 +40,9 @@ const Header = () => {
       <div className="header_nav">
         <div className="header_option">
           <span className="header_optionLineOne">Hello</span>
-          <span className="header_optionLinetwo">Sign In</span>
+          <NavLink to="/login" className="header_optionLinetwo">
+            Sign In
+          </NavLink>
         </div>
         <div className="header_option">
           <span className="header_optionLineOne">Returns</span>

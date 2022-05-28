@@ -64,6 +64,8 @@
 .header_optionLinetwo {
     font-size: 13px;
     font-weight: 800;
+    color: white;
+    text-decoration: none;
 }
 
 .header_optionBasket {
