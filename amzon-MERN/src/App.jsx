@@ -7,6 +7,7 @@ import SignIn from "./componentes/SignUpSignIN/SignIn";
 import SignUp from "./componentes/SignUpSignIN/SignUp";
 import { Routes,Route } from "react-router-dom";
 import Cart from "./componentes/cart/Cart";
+import BuyNow from "./componentes/buyNow/BuyNow";
 
 const App = () => {
   return (
@@ -17,7 +18,8 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<SignIn />} />
         <Route path="/register" element={<SignUp />} />
-        <Route path="/getproduct/:id" element={<Cart/>} />
+        <Route path="/getproduct/:id" element={<Cart />} />
+        <Route path="/buynow" element={<BuyNow />} />
       </Routes>
 
       <Footer></Footer>
