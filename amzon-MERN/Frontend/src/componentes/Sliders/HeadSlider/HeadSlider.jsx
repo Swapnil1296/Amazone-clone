@@ -35,9 +35,9 @@ const HeadSlider = () => {
       >
         {data.map((image, i) => {
           return (
-            <>
-              <img src={image} alt="image" key={i} className="banner_img" />
-            </>
+            <div key={i}>
+              <img src={image} alt="image" className="banner_img" />
+            </div>
           );
         })}
       </Carousel>

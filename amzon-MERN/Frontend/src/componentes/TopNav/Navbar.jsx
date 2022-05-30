@@ -1,20 +1,20 @@
 import React from 'react'
 import './Navbar.css'
 import MenuIcon from "@mui/icons-material/Menu";
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
   return (
     <div className="new_nav">
       <div className="nav_data">
-       
-        
         <div className="left_data">
-         
-              <MenuIcon />
+          <MenuIcon />
           <p>All</p>
-       
+
           <p>Mobiles</p>
-          <p>Best Sellers</p>
+          <NavLink to ="/bestseller">
+            <p>Best Sellers</p>
+          </NavLink>
           <p>Fashion</p>
           <p>Customer Service</p>
           <p>Electronics</p>
