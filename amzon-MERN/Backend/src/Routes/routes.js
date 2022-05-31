@@ -1,8 +1,9 @@
 const express = require("express");
 const router = new express.Router();
 const products = require("../models/product.schema");
-// const User = require("../models/userSchema");
-// const bcrypt = require("bcryptjs");
+const User=require ("../models/users.schema")
+
+const bcrypt = require("bcryptjs");
 // const authenicate = require("../middleware/authenticate");
 
 // router.get("/",(req,res)=>{
@@ -20,7 +21,22 @@ router.get("/getproducts", async (req, res) => {
     console.log("error" + error.message);
   }
 });
-/*
+// getindividual
+
+router.get("/getproducts/:id", async (req, res) => {
+  try {
+    const {id} = req.params;
+    // console.log(id);
+
+    const individual = await products.findOne({id: id});
+    // console.log(individual + "ind mila hai");
+
+    res.status(201).json(individual);
+  } catch (error) {
+    res.status(400).json(error);
+  }
+});
+
 // register the data
 router.post("/register", async (req, res) => {
   // console.log(req.body);
@@ -60,7 +76,7 @@ router.post("/register", async (req, res) => {
     res.status(422).send(error);
   }
 });
-
+/*
 // login data
 router.post("/login", async (req, res) => {
   // console.log(req.body);
@@ -98,21 +114,7 @@ router.post("/login", async (req, res) => {
   }
 });
 
-// getindividual
 
-router.get("/getproductsone/:id", async (req, res) => {
-  try {
-    const {id} = req.params;
-    console.log(id);
-
-    const individual = await products.findOne({id: id});
-    console.log(individual + "ind mila hai");
-
-    res.status(201).json(individual);
-  } catch (error) {
-    res.status(400).json(error);
-  }
-});
 
 // adding the data into cart
 router.post("/addcart/:id", authenicate, async (req, res) => {

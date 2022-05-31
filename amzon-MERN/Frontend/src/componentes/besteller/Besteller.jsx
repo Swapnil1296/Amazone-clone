@@ -6,16 +6,16 @@ import { NavLink } from 'react-router-dom';
 
 const Besteller = () => {
     const { products } = useSelector((state) => state.getproductsdata);
-    console.log(products);
+    // console.log(products);
     const dispatch = useDispatch();
     useEffect(() => {
         dispatch(getProducts())
     },[dispatch])
   return (
     <div className="bestseller">
-      {products.map((el) => (
+      {products.map((el,i) => (
         <NavLink to={`/getproducts/${el.id}`}>
-          <div className="bestseller_container" key={el.id}>
+          <div className="bestseller_container" key={i}>
             <div className="bestseller_left">
               <img className="best_img" src={el.url} alt="bestseller" />
             </div>
