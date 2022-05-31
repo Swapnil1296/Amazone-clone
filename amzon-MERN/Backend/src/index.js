@@ -6,8 +6,10 @@ const Products = require("./models/product.schema");
 const DefaultData = require("./defaulData/defaultData");
 const cors = require("cors");
 const router = require("./Routes/routes");
+const cookieParser = require("cookie-parser");
 const app = express();
 app.use(express.json());
+app.use(cookieParser(""));
 app.use(cors());
 app.use(router)
 

@@ -1,14 +1,11 @@
 const express = require("express");
 const router = new express.Router();
 const products = require("../models/product.schema");
-const User=require ("../models/users.schema")
-
+const User=require ("../models/users.schema");
 const bcrypt = require("bcryptjs");
 // const authenicate = require("../middleware/authenticate");
 
-// router.get("/",(req,res)=>{
-//     res.send("this is testing routes");
-// });
+
 
 // get the products data
 
@@ -76,7 +73,7 @@ router.post("/register", async (req, res) => {
     res.status(422).send(error);
   }
 });
-/*
+
 // login data
 router.post("/login", async (req, res) => {
   // console.log(req.body);
@@ -97,7 +94,7 @@ router.post("/login", async (req, res) => {
         res.status(400).json({error: "invalid crediential pass"});
       } else {
         const token = await userlogin.generatAuthtoken();
-        console.log(token);
+        // console.log(token);
 
         res.cookie("eccomerce", token, {
           expires: new Date(Date.now() + 2589000),
@@ -115,7 +112,7 @@ router.post("/login", async (req, res) => {
 });
 
 
-
+/*
 // adding the data into cart
 router.post("/addcart/:id", authenicate, async (req, res) => {
   try {
