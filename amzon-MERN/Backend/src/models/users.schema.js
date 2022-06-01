@@ -69,6 +69,7 @@ userSchema.methods.generatAuthtoken = async function () {
   }
 };
 /*
+
 // addto cart data
 userSchema.methods.addcartdata = async function (cart) {
   try {
@@ -78,8 +79,8 @@ userSchema.methods.addcartdata = async function (cart) {
   } catch (error) {
     console.log(error + "bhai cart add time aai error");
   }
-};
-*/
+};*/
+
 
 const User = new mongoose.model("USER", userSchema);
 

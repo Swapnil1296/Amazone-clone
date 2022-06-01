@@ -8,15 +8,17 @@ const Cart = () => {
   const {id} = useParams();
   // console.log(id);
   const [inData, setInData] = useState([]);
-  console.log("In Data:", inData);
+  // console.log("In Data:", inData);
 
   // to get data acc to id;
   const getData = async () => {
     const res = await fetch(`http://localhost:8080/getproducts/${id}`, {
       method: "GET",
       headers: {
+        Accept: "application/json",
         "Content-Type": "application/json",
       },
+      credentials: "include",
     });
     const data = await res.json();
     // console.log("data is:",data);
@@ -29,7 +31,35 @@ const Cart = () => {
   };
   useEffect(() => {
     getData();
-  }, []);
+  }, [id]);
+
+  // user add to cart;
+
+  const addtocart = async (id) => {
+    console.log(id);
+    const check = await fetch(`http://localhost:8080/addcart/${id}`, {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        inData,
+      }),
+      credentials: "include",
+    });
+    // console.log(check);
+    const data1 = await check.json();
+    // console.log(data1 +  'ok');
+
+    if (check.status !== 201) {
+      alert("no data available");
+    } else {
+      console.log("cart add ho gya hain");
+      // setAccount(data1);
+      // history.push("/buynow");
+    }
+  };
   return (
     <div className="cart_section">
       {inData &&
@@ -38,7 +68,12 @@ const Cart = () => {
             <div className="left_cart">
               <img src={inData.detailUrl} alt="cartImage" />
               <div className="cart_btn">
-                <button className="cart_btn1">Add to Cart</button>
+                <button
+                  className="cart_btn1"
+                  onClick={() => addtocart(inData.id)}
+                >
+                  Add to Cart
+                </button>
                 <button className="cart_btn2">Buy Now</button>
               </div>
             </div>
@@ -75,7 +110,7 @@ const Cart = () => {
                 </p>
               </div>
               <p className="description">
-                About the Iteam :{" "}
+                About the Iteam :
                 <span
                   style={{
                     color: "#565959",

@@ -1,11 +1,10 @@
 const express = require("express");
 const router = new express.Router();
 const products = require("../models/product.schema");
-const User=require ("../models/users.schema");
+const User = require("../models/users.schema");
 const bcrypt = require("bcryptjs");
-// const authenicate = require("../middleware/authenticate");
 
-
+const authenicate = require("../middleware/authenticate");
 
 // get the products data
 
@@ -88,18 +87,20 @@ router.post("/login", async (req, res) => {
     console.log(userlogin);
     if (userlogin) {
       const isMatch = await bcrypt.compare(password, userlogin.password);
-      console.log(isMatch);
+      // console.log("haa match ho gaya hai"+isMatch);
+
+      // generating the token;
+      const token = await userlogin.generatAuthtoken();
+      // console.log("token is:" + token);
+
+       res.cookie("Amazonweb", token, {
+         expires: new Date(Date.now() + 900000),
+         httpOnly: true,
+       });
 
       if (!isMatch) {
         res.status(400).json({error: "invalid crediential pass"});
       } else {
-        const token = await userlogin.generatAuthtoken();
-        // console.log(token);
-
-        res.cookie("eccomerce", token, {
-          expires: new Date(Date.now() + 2589000),
-          httpOnly: true,
-        });
         res.status(201).json(userlogin);
       }
     } else {
@@ -112,7 +113,7 @@ router.post("/login", async (req, res) => {
 });
 
 
-/*
+
 // adding the data into cart
 router.post("/addcart/:id", authenicate, async (req, res) => {
   try {
@@ -137,6 +138,7 @@ router.post("/addcart/:id", authenicate, async (req, res) => {
   }
 });
 
+/*
 // get data into the cart
 router.get("/cartdetails", authenicate, async (req, res) => {
   try {
